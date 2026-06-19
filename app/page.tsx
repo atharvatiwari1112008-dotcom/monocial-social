@@ -22,7 +22,7 @@ export default function Home() {
         </h2>
 
         <p className="mt-4 max-w-2xl text-base text-gray-400 sm:text-lg">
-          Share posts, reels and thoughts with the world.
+          Share photos, reels, and thoughts in one simple place.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
@@ -35,45 +35,28 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="mt-12 grid grid-cols-3 gap-4">
-          <div className="rounded bg-white/5 p-4">
-            <h3 className="text-xl font-bold">100+</h3>
-            <p className="text-sm text-gray-400">Posts</p>
-          </div>
-
-          <div className="rounded bg-white/5 p-4">
-            <h3 className="text-xl font-bold">1K+</h3>
-            <p className="text-sm text-gray-400">Followers</p>
-          </div>
-
-          <div className="rounded bg-white/5 p-4">
-            <h3 className="text-xl font-bold">250+</h3>
-            <p className="text-sm text-gray-400">Following</p>
-          </div>
-        </div>
-
         <div className="mt-12">
-          <h3 className="mb-4 text-2xl font-bold">What we feature</h3>
+          <h3 className="mb-4 text-2xl font-bold">What Monowire will feature</h3>
 
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-gray-800 bg-white/5 p-5">
               <h4 className="text-lg font-semibold">Photo Posts</h4>
               <p className="mt-2 text-sm text-gray-400">
-                Upload and share images with your audience.
+                Upload and share images.
               </p>
             </div>
 
             <div className="rounded-2xl border border-gray-800 bg-white/5 p-5">
               <h4 className="text-lg font-semibold">Reels</h4>
               <p className="mt-2 text-sm text-gray-400">
-                Share short videos and discover creators.
+                Share short videos.
               </p>
             </div>
 
             <div className="rounded-2xl border border-gray-800 bg-white/5 p-5">
               <h4 className="text-lg font-semibold">Quick Thoughts</h4>
               <p className="mt-2 text-sm text-gray-400">
-                Post short updates and react instantly.
+                Post short messages and updates.
               </p>
             </div>
 
@@ -89,11 +72,36 @@ export default function Home() {
         <div className="mt-12">
           <h3 className="mb-4 text-2xl font-bold">Inside the app</h3>
 
-          <div className="rounded-2xl border border-gray-800 bg-white/5 p-5">
-            <p className="text-sm text-gray-400">
-              Real trending topics, posts, and popular creators will appear here
-              after users start posting.
-            </p>
+          <div className="rounded-2xl border border-gray-800 bg-white/5 p-5 text-sm text-gray-400">
+            Real posts, real reels, and real trending content will appear here
+            after the app is connected to users and a database.
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <h3 className="mb-4 text-2xl font-bold">Why Monowire</h3>
+
+          <div className="grid gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-gray-800 bg-white/5 p-5">
+              <h4 className="text-lg font-semibold">Simple</h4>
+              <p className="mt-2 text-sm text-gray-400">
+                Clean layout with no clutter.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-gray-800 bg-white/5 p-5">
+              <h4 className="text-lg font-semibold">Flexible</h4>
+              <p className="mt-2 text-sm text-gray-400">
+                Can grow into posts, reels, and chat.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-gray-800 bg-white/5 p-5">
+              <h4 className="text-lg font-semibold">Built from scratch</h4>
+              <p className="mt-2 text-sm text-gray-400">
+                Your first real project, step by step.
+              </p>
+            </div>
           </div>
         </div>
       </section>
