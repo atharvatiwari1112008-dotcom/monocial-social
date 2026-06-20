@@ -35,25 +35,25 @@ const roadmap: Card[] = [
   {
     title: "Login",
     text: "Sign in with Google and create a session.",
-    tag: "day 3",
+    tag: ""
   },
   {
     title: "Profile",
     text: "Unique username, avatar, and bio.",
-    tag: "day 4",
+    tag: "",
   },
   {
     title: "Feed",
     text: "Show real posts from real users.",
-    tag: "day 5",
+    tag: "you are the one",
   },
 ];
 
 const buildNotes = [
-  "No fake stats",
-  "No fake trending",
+  "Simple Profiles",
+  "Minimal design",
   "No clutter",
-  "Built from scratch",
+  "For people who want to share and connect without noise",
 ];
 
 function MonocialMark({ className = "" }: { className?: string }) {
@@ -171,7 +171,7 @@ export default function Home() {
                 Monocial
               </div>
               <div className="text-[10px] uppercase tracking-[0.35em] text-white/35">
-                minimal social
+                Finally, a platform that listens.
               </div>
             </div>
           </div>
@@ -271,7 +271,7 @@ export default function Home() {
               current focus
             </p>
             <p className="mt-2 text-sm leading-6 text-white/65">
-              Build the login flow first, then profiles, then the first real
+              Building the foundations of a simpler social experience.
               feed.
             </p>
           </div>
@@ -380,7 +380,7 @@ export default function Home() {
       <footer className="border-t border-white/10 py-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 text-sm text-white/45 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Monocial. Built by Atharva.</p>
-          <p>First version: clean page, safe logo fallback, no fake data.</p>
+          <p>Monocial • Built with simplicity in mind.</p>
         </div>
       </footer>
     </main>
