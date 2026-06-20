@@ -49,9 +49,14 @@ const roadmap: Card[] = [
   },
 ];
 
-const buildNotes = ["No fake stats", "No fake trending", "No clutter", "Built from scratch"];
+const buildNotes = [
+  "No fake stats",
+  "No fake trending",
+  "No clutter",
+  "Built from scratch",
+];
 
-function MonowireMark({ className = "" }: { className?: string }) {
+function MonocialMark({ className = "" }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 64 64"
@@ -99,15 +104,17 @@ function BrandLogo() {
   const [step, setStep] = useState(0);
 
   if (step >= sources.length) {
-    return <MonowireMark className="h-11 w-11 text-white" />;
+    return <MonocialMark className="h-11 w-11 text-white" />;
   }
 
   return (
     <img
       src={sources[step]}
-      alt="Monowire logo"
+      alt="Monocial logo"
       className="h-11 w-11 rounded-2xl border border-white/10 bg-black object-cover"
-      onError={() => setStep((current) => Math.min(current + 1, sources.length))}
+      onError={() =>
+        setStep((current) => Math.min(current + 1, sources.length))
+      }
     />
   );
 }
@@ -161,7 +168,7 @@ export default function Home() {
             <BrandLogo />
             <div>
               <div className="text-xl font-semibold tracking-tight">
-                Monowire
+                Monocial
               </div>
               <div className="text-[10px] uppercase tracking-[0.35em] text-white/35">
                 minimal social
@@ -205,7 +212,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/60 sm:text-lg">
-            Monowire keeps the first version clean and fun. No fake counts, no
+            Monocial keeps the first version clean and fun. No fake counts, no
             clutter, no noisy layout. Just a strong base for posts, reels,
             thoughts, profiles, and chat.
           </p>
@@ -238,7 +245,7 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <BrandLogo />
               <div>
-                <p className="text-sm font-semibold">Monowire</p>
+                <p className="text-sm font-semibold">Monocial</p>
                 <p className="text-xs text-white/45">branding preview</p>
               </div>
             </div>
@@ -274,7 +281,7 @@ export default function Home() {
       <section id="features" className="mx-auto max-w-6xl px-6 py-8">
         <SectionTitle
           eyebrow="features"
-          title="What Monowire will feature"
+          title="What Monocial will feature"
           text="The first version stays small and clear. Each block below is a real building block for the app, not a fake social feed."
         />
 
@@ -372,7 +379,7 @@ export default function Home() {
 
       <footer className="border-t border-white/10 py-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 text-sm text-white/45 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Monowire. Built by Atharva.</p>
+          <p>© 2026 Monocial. Built by Atharva.</p>
           <p>First version: clean page, safe logo fallback, no fake data.</p>
         </div>
       </footer>
